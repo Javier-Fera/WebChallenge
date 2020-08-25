@@ -1,4 +1,12 @@
-#test{
-    padding:9px;
+.bordered_results{
     border: 3px solid black;    
+    margin: 2px;
+}
+
+.r_header{
+    color:blue;
+}
+
+.r_description{
+    font-style: italic;
 }

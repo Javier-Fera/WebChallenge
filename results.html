@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,8 @@
     <link rel="stylesheet" href="style/style.css">
     <script src="script/script.js"></script>
 </head>
-<body>
+
+<body onload="writedata()">
     <div class="blue_bg">
         <section>
             <p>Logo</p>
@@ -16,10 +18,31 @@
 
     <div class="results">
         <section>
-            <p>Results</p>
+            <h2 class="r_header">Results</h2>
+            <p>Look at the result</p>
         </section>
-        <section class="bordered_results">
-            <p>Example</p>
+
+        <section id="results_view" class="bordered_results">
+            <div>
+                <section>
+                    <h2 id="result_name" class="r_header"></h2>
+                    <p id="result_description" class='r_description'></p>
+                </section>
+
+                <section>
+                    <h2 class='r_header'>Address</h2>
+                    <p id="result_address" class='r_description'></p>
+                    <h2 class='r_header'>Email</h2>
+                    <p id="result_email" class='r_description'></p>
+                </section>
+
+                <section>
+                    <h2 class='r_header'>Phone Numbers</h2>
+                    <div id="result_phone"></div>
+                    <h2 class='r_header'>Relatives</h2>
+                    <div id='result_relatives'></div>
+                </section>
+            </div>
         </section>
     </div>
 
@@ -42,18 +65,19 @@
 
     <div class="terms_conditions">
         <section class="terms_text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum odio nibh, 
-                vel viverra ex tempus id. Praesent id purus feugiat, ornare justo sit amet, 
-                cursus nisl. Pellentesque ut feugiat turpis. Aliquam id pharetra elit. In nunc lacus, 
-                euismod vel porttitor aliquet, scelerisque vel nisl. Ut pulvinar suscipit metus ac venenatis. 
-                Pellentesque iaculis semper porta. Maecenas metus libero, imperdiet at sollicitudin eu, 
-                egestas a augue. 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum odio nibh,
+                vel viverra ex tempus id. Praesent id purus feugiat, ornare justo sit amet,
+                cursus nisl. Pellentesque ut feugiat turpis. Aliquam id pharetra elit. In nunc lacus,
+                euismod vel porttitor aliquet, scelerisque vel nisl. Ut pulvinar suscipit metus ac venenatis.
+                Pellentesque iaculis semper porta. Maecenas metus libero, imperdiet at sollicitudin eu,
+                egestas a augue.
             </p>
         </section>
         <section class="terms_links">
             <a href="#">Terms</a>
             <a href="#">Conditions</a>
         </section>
-    </div> 
+    </div>
 </body>
+
 </html>
