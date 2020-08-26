@@ -30,3 +30,21 @@ Add responsiveness
 Finally:
 Study and launch on Heroku.
 
+###25/8/20
+
+Plenty of progress:
+
+Created a JS validation function to avoid invalid emails or empty values.
+Found a way to make a label input by making input invisible and a div double as the input space.
+Added all the css to the mobile version of the webpage. 
+Added red letters to the error message of the label and border.
+Button now has colors for hover and click.
+
+Next up:
+
+Responsiveness for Tablet and Desktop views (according to the mock up, they are pretty similar)
+
+Finally:
+
+Heroku investigation and deployment.
+

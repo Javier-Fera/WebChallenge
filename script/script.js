@@ -6,10 +6,10 @@
 
 //regex email check with border change
 
-async function writedata() {
-
+function writedata(email) {
+    
     var results;
-    fetch("https://ltv-data-api.herokuapp.com/api/v1/records.json?email=garciansmith@example.com")
+    fetch("https://ltv-data-api.herokuapp.com/api/v1/records.json?email="+email)
         .then(res => res.json())
         .then(data => results = data)
         .then(() => {
@@ -17,19 +17,20 @@ async function writedata() {
                 notFoundMessageDisplay();
             }
             else {
-                document.getElementById("result_name").innerHTML = JSON.stringify(results.first_name);
-                document.getElementById("result_description").innerHTML = JSON.stringify(results.description);
-                document.getElementById("result_address").innerHTML = JSON.stringify(results.address);
-                document.getElementById("result_email").innerHTML = JSON.stringify(results.email);
+                document.getElementById("result_name").innerHTML = JSON.stringify(results.first_name).slice(1, -1) 
+                    + " " +JSON.stringify(results.last_name).slice(1, -1);
+                document.getElementById("result_description").innerHTML = JSON.stringify(results.description).slice(1, -1);
+                document.getElementById("result_address").innerHTML = JSON.stringify(results.address).slice(1, -1);
+                document.getElementById("result_email").innerHTML = JSON.stringify(results.email).slice(1, -1);
 
                 Object.values(results.phone_numbers).forEach(element => {
                     document.getElementById("result_phone")
-                        .innerHTML += "<p>" + element + "</p>"
+                        .innerHTML += "<p class='r_description'>" + element + "</p>"
                 });
 
                 Object.values(results.relatives).forEach(element => {
                     document.getElementById("result_relatives")
-                        .innerHTML += "<p>" + element + "</p>"
+                        .innerHTML += "<p class='r_description'>" + element + "</p>"
                 });
             }
         })
@@ -37,19 +38,31 @@ async function writedata() {
 
 function notFoundMessageDisplay() {
     document.getElementById("results_view").innerHTML =
-        "<div><h2>Nothing was Found</h2>"
+        "<div><p class='r_header'>Nothing was Found</p>"
         + "<p class='r_description'>The search you made yielded no results...</p></div>";
 }
 
 function testing() {
-    var results;
-    fetch("https://ltv-data-api.herokuapp.com/api/v1/records.json?email=doesith@example.com")
-        .then(res => res.json())
-        .then(data => results = data)
-        .then(() => {
-            console.log("breakdown");
-            if (JSON.stringify(results) == "[]") {
-                console.log("There's Nothing here");
-            }
-        });
+    
+}
+
+function storeEmail(){
+    let input = document.getElementById("email_input").value;
+    let emailRegex = new RegExp("([a-zA-Z0-9]{2,}@[a-zA-Z0-9]{2,}.[a-zA-Z]{1,})");
+
+    if(input == "" || emailRegex.test(String(input))==false ){
+        document.getElementById("class_form").innerHTML = 
+        "<div id='class_form' class='email_form_error'>"
+        +"<label id='email_label' class='email_label_error' for='email_input'>Please add a valid Email address</label>"
+        +"<input id='email_input' type='text'>"
+        +"</div>";
+    }
+    else{
+        sessionStorage.setItem("stored_email", input);
+        window.location.href = "results.html";
+    }
+}
+
+function getEmail(){
+   return sessionStorage.getItem("stored_email");
 }

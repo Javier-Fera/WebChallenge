@@ -12,25 +12,41 @@
 <body>
     <div class="blue_bg">
         <section class="company_logo">
-            <p>Logo</p>
+            <img class="logo_image" src="assets/logo.png" alt="logo_icon">
+            <span class="top_icons">
+                <img class="icon_image" src="assets/search.png" alt="search_icon">
+                <img class="icon_image" src="assets/person.png" alt="person_icon">
+            </span>
         </section>
-        <section class="text_description">
-            <p>Search Address</p>
-            <p>They'll never know</p>
-        </section>
-        <section class="search_form">
-            <input type="text" name="" id="">
-            <button>Text</button>
-        </section>
-        <section class="bottom_text">
-            <p>Enter Adress</p>
-        </section>
+
+        <div class="search_section">
+            <section class="text_description">
+                <p class="white_header_text">Search Any Email Address</p>
+                <p class="white_description_text"><span class="bold_yellow">Start Here</span><span> - Look up the
+                        owner's name, photos and online profiles. See what you find!</span></p>
+            </section>
+
+            <section id="class_form" class="form_section">
+                <div class="email_form">
+                    <label id="email_label" class="email_label" for="email_input">Email</label>
+                    <input id="email_input" type="text">
+                </div>
+            </section>
+            <input class="search_button" onclick="storeEmail()" value="GO!" type="submit" />
+            
+
+            <section class="bottom_text">
+                <img class="icon_image floating_left" src="assets/lock.png" alt="lock_icon">
+                <p class="bold_yellow">Enter Any Email Address. They won't be notified</p>
+            </section>
+        </div>
     </div>
 
     <div class="white_gradient">
         <section class="gradient_text">
-            <p>TITLE</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum odio nibh,
+            <p class="blue_header">Reverse Email Lookup</p>
+            <p class="gray_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum odio
+                nibh,
                 vel viverra ex tempus id. Praesent id purus feugiat, ornare justo sit amet,
                 cursus nisl. Pellentesque ut feugiat turpis. Aliquam id pharetra elit. In nunc lacus,
                 euismod vel porttitor aliquet, scelerisque vel nisl. Ut pulvinar suscipit metus ac venenatis.
@@ -38,20 +54,49 @@
                 egestas a augue.
             </p>
         </section>
-        <section class="bulleted_list">
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
 
-            <ul>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
-            </ul>
+        <section class="two_columns_responsive">            
+            <section class="two_columns">
+                <p class="circle_border bulleted_column">1</p>
+                <div>
+                    <p class="bulleted_header">Lorem ipsum</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus eaque omnis est. Quis ullam facilis hic, cum quaerat, doloremque quibusdam impedit eius quas, amet ipsum sed suscipit eligendi at minima!</p>
+                </div>
+                <p class="circle_border bulleted_column">2</p>
+                <div>
+                    <p class="bulleted_header">Lorem ipsum</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus eaque omnis est. Quis ullam facilis hic, cum quaerat, doloremque quibusdam impedit eius quas, amet ipsum sed suscipit eligendi at minima!</p>
+                </div>
+                <p class="circle_border bulleted_column">3</p>
+                <div>
+                    <p class="bulleted_header">Lorem ipsum</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus eaque omnis est. Quis ullam facilis hic, cum quaerat, doloremque quibusdam impedit eius quas, amet ipsum sed suscipit eligendi at minima!</p>
+                </div>                
+            </section>
+        </section>
+
+        <section class="two_columns_responsive">
+            
+            <section class="two_columns">
+                <p class="circle_border bulleted_column">4</p>
+                <div>
+                    <p class="bulleted_header">Lorem ipsum</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus eaque omnis est. Quis ullam facilis hic, cum quaerat, doloremque quibusdam impedit eius quas, amet ipsum sed suscipit eligendi at minima!</p>
+                </div>
+                <p class="circle_border bulleted_column">5</p>
+                <div>
+                    <p class="bulleted_header">Lorem ipsum</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus eaque omnis est. Quis ullam facilis hic, cum quaerat, doloremque quibusdam impedit eius quas, amet ipsum sed suscipit eligendi at minima!</p>
+                </div>
+                <p class="circle_border bulleted_column">6</p>
+                <div>
+                    <p class="bulleted_header">Lorem ipsum</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus eaque omnis est. Quis ullam facilis hic, cum quaerat, doloremque quibusdam impedit eius quas, amet ipsum sed suscipit eligendi at minima!</p>
+                </div>                
+            </section>
 
         </section>
+
     </div>
 
     <div class="terms_conditions">
@@ -65,8 +110,11 @@
             </p>
         </section>
         <section class="terms_links">
-            <a href="#">Terms</a>
-            <a href="#">Conditions</a>
+            <span>
+                <a href="#">Terms</a>
+                <span> | </span>
+                <a href="#">Conditions</a>
+        </span>
         </section>
     </div>
 </body>

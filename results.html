@@ -9,57 +9,68 @@
     <script src="script/script.js"></script>
 </head>
 
-<body onload="writedata()">
+<body onload="writedata(getEmail())">
+
     <div class="blue_bg">
-        <section>
-            <p>Logo</p>
+        <section class="company_logo">
+            <img class="logo_image" src="assets/logo.png" alt="logo_icon">
+            <span class="top_icons">
+                <img class="icon_image" src="assets/search.png" alt="search_icon">
+                <img class="icon_image" src="assets/person.png" alt="person_icon">
+            </span>
         </section>
     </div>
 
-    <div class="results">
+    <div class="white_gradient">
         <section>
-            <h2 class="r_header">Results</h2>
-            <p>Look at the result</p>
+            <p class="blue_header">Results</p>
+            <p class="gray_description">Look at the result below to see the details of the person you've searched for.
+            </p>
         </section>
 
         <section id="results_view" class="bordered_results">
             <div>
                 <section>
-                    <h2 id="result_name" class="r_header"></h2>
+                    <p id="result_name" class="blue_header"></p>
                     <p id="result_description" class='r_description'></p>
                 </section>
 
                 <section>
-                    <h2 class='r_header'>Address</h2>
+                    <p class='r_header'>Address</p>
                     <p id="result_address" class='r_description'></p>
-                    <h2 class='r_header'>Email</h2>
+                    <p class='r_header'>Email</p>
                     <p id="result_email" class='r_description'></p>
                 </section>
 
                 <section>
-                    <h2 class='r_header'>Phone Numbers</h2>
+                    <p class='r_header'>Phone Numbers</p>
                     <div id="result_phone"></div>
-                    <h2 class='r_header'>Relatives</h2>
+                    <p class='r_header'>Relatives</p>
                     <div id='result_relatives'></div>
                 </section>
             </div>
         </section>
     </div>
 
-    <div class="find_person blue_bg">
+    <div class="blue_bg">
         <section>
-            <p>Can't find</p>
-            <p>Try Again</p>
+            <p class="white_header_text"> Can't Find The Right Person?</p>
+            <p class="white_description_text">
+                <span class="bold_yellow">Try Again</span>
+                <span> - Make a new search</span></p>
         </section>
-        <section>
-            <input type="text">
+        <section id="class_form" class="form_section">
+            <div class="email_form">
+                <label id="email_label" class="email_label" for="email_input">Email</label>
+                <input id="email_input" type="text">
+            </div>
         </section>
-        <section>
-            <button>Text</button>
-        </section>
-        <section>
-            <p>Enter Adress</p>
-            <p>They wont know</p>
+        <input class="search_button" onclick="storeEmail()" value="GO!" type="submit" />
+
+
+        <section class="bottom_text">
+            <img class="icon_image floating_left" src="assets/lock.png" alt="lock_icon">
+            <p class="bold_yellow">Enter Any Email Address. They won't be notified</p>
         </section>
     </div>
 
@@ -74,8 +85,11 @@
             </p>
         </section>
         <section class="terms_links">
-            <a href="#">Terms</a>
-            <a href="#">Conditions</a>
+            <span>
+                <a href="#">Terms</a>
+                <span> | </span>
+                <a href="#">Conditions</a>
+        </span>
         </section>
     </div>
 </body>
