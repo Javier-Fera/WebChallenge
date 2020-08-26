@@ -34,6 +34,9 @@ function writedata(email) {
                 });
             }
         })
+        .catch(function() {
+            notFoundMessageDisplay();
+        });
 }
 
 function notFoundMessageDisplay() {
