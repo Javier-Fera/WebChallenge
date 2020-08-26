@@ -1,6 +1,6 @@
 ## Web Challenge Project
 
-###24/8/20
+### 24/8/20
 
 Project Begins!
 
@@ -30,7 +30,7 @@ Add responsiveness
 Finally:
 Study and launch on Heroku.
 
-###25/8/20
+### 25/8/20
 
 Plenty of progress:
 

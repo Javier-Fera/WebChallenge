@@ -142,7 +142,7 @@ input[type="submit"].search_button:active{
     color:#004A80;
     font-size: 40px;
     font-weight: bold;
-    margin:10px 0px;
+    margin:10px;
 }
 
 .gray_description{
