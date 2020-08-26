@@ -13,11 +13,12 @@
     <div class="blue_bg">
         <section class="company_logo">
             <img class="logo_image" src="assets/logo.png" alt="logo_icon">
-            <span class="top_icons">
-                <img class="icon_image" src="assets/search.png" alt="search_icon">
-                <img class="icon_image" src="assets/person.png" alt="person_icon">
-            </span>
-        </section>
+        <span class="top_icons">
+            <img class="icon_image" src="assets/search.png" alt="search_icon">
+            <img class="icon_image" src="assets/person.png" alt="person_icon">
+        </span>
+    </section>
+        
 
         <div class="search_section">
             <section class="text_description">
@@ -26,14 +27,16 @@
                         owner's name, photos and online profiles. See what you find!</span></p>
             </section>
 
-            <section id="class_form" class="form_section">
-                <div class="email_form">
-                    <label id="email_label" class="email_label" for="email_input">Email</label>
-                    <input id="email_input" type="text">
-                </div>
+            <section class="two_columns_form">
+                <section id="class_form" class="form_section">
+                    <div class="email_form">
+                        <label id="email_label" class="email_label" for="email_input">Email</label>
+                        <input id="email_input" type="text">
+                    </div>
+                </section>
+                <input class="search_button" onclick="storeEmail()" value="GO!" type="submit" />
             </section>
-            <input class="search_button" onclick="storeEmail()" value="GO!" type="submit" />
-            
+
 
             <section class="bottom_text">
                 <img class="icon_image floating_left" src="assets/lock.png" alt="lock_icon">
@@ -55,51 +58,60 @@
             </p>
         </section>
 
-        <section class="two_columns_responsive">            
+        <section class="two_columns_list">
             <section class="two_columns">
                 <p class="circle_border bulleted_column">1</p>
                 <div>
                     <p class="bulleted_header">Lorem ipsum</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus eaque omnis est. Quis ullam facilis hic, cum quaerat, doloremque quibusdam impedit eius quas, amet ipsum sed suscipit eligendi at minima!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus eaque omnis est. Quis ullam
+                        facilis hic, cum quaerat, doloremque quibusdam impedit eius quas, amet ipsum sed suscipit
+                        eligendi at minima!</p>
                 </div>
                 <p class="circle_border bulleted_column">2</p>
                 <div>
                     <p class="bulleted_header">Lorem ipsum</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus eaque omnis est. Quis ullam facilis hic, cum quaerat, doloremque quibusdam impedit eius quas, amet ipsum sed suscipit eligendi at minima!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus eaque omnis est. Quis ullam
+                        facilis hic, cum quaerat, doloremque quibusdam impedit eius quas, amet ipsum sed suscipit
+                        eligendi at minima!</p>
                 </div>
                 <p class="circle_border bulleted_column">3</p>
                 <div>
                     <p class="bulleted_header">Lorem ipsum</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus eaque omnis est. Quis ullam facilis hic, cum quaerat, doloremque quibusdam impedit eius quas, amet ipsum sed suscipit eligendi at minima!</p>
-                </div>                
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus eaque omnis est. Quis ullam
+                        facilis hic, cum quaerat, doloremque quibusdam impedit eius quas, amet ipsum sed suscipit
+                        eligendi at minima!</p>
+                </div>
             </section>
-        </section>
 
-        <section class="two_columns_responsive">
-            
             <section class="two_columns">
                 <p class="circle_border bulleted_column">4</p>
                 <div>
                     <p class="bulleted_header">Lorem ipsum</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus eaque omnis est. Quis ullam facilis hic, cum quaerat, doloremque quibusdam impedit eius quas, amet ipsum sed suscipit eligendi at minima!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus eaque omnis est. Quis ullam
+                        facilis hic, cum quaerat, doloremque quibusdam impedit eius quas, amet ipsum sed suscipit
+                        eligendi at minima!</p>
                 </div>
                 <p class="circle_border bulleted_column">5</p>
                 <div>
                     <p class="bulleted_header">Lorem ipsum</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus eaque omnis est. Quis ullam facilis hic, cum quaerat, doloremque quibusdam impedit eius quas, amet ipsum sed suscipit eligendi at minima!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus eaque omnis est. Quis ullam
+                        facilis hic, cum quaerat, doloremque quibusdam impedit eius quas, amet ipsum sed suscipit
+                        eligendi at minima!</p>
                 </div>
                 <p class="circle_border bulleted_column">6</p>
                 <div>
                     <p class="bulleted_header">Lorem ipsum</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus eaque omnis est. Quis ullam facilis hic, cum quaerat, doloremque quibusdam impedit eius quas, amet ipsum sed suscipit eligendi at minima!</p>
-                </div>                
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus eaque omnis est. Quis ullam
+                        facilis hic, cum quaerat, doloremque quibusdam impedit eius quas, amet ipsum sed suscipit
+                        eligendi at minima!</p>
+                </div>
             </section>
 
         </section>
 
     </div>
 
-    <div class="terms_conditions">
+    <div class="terms_conditions two_columns_conditions">
         <section class="terms_text">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum odio nibh,
                 vel viverra ex tempus id. Praesent id purus feugiat, ornare justo sit amet,
@@ -114,7 +126,7 @@
                 <a href="#">Terms</a>
                 <span> | </span>
                 <a href="#">Conditions</a>
-        </span>
+            </span>
         </section>
     </div>
 </body>

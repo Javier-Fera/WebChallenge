@@ -14,9 +14,8 @@ body{
 }
 
 .top_icons{
-  position: absolute;
-  right: 0px;
-  padding: 10px;
+    float: right;
+    margin: 10px auto;
 }
 
 .logo_image{
@@ -34,7 +33,7 @@ body{
     font-weight: 700;
     font-size: 50px;
     text-align: center;
-    margin: 10px 10px;
+    padding: 10px 10px;
 }
 
 .white_description_text{
@@ -98,9 +97,9 @@ body{
     background-color: #F3D046;
     color: #004A80;
     width: 100%;
+    height: 80px;
     display: block;
     margin:auto;
-    height: 80px;
     font-size:45px;
     border-radius: 10px;
     margin-top: 10px;
@@ -120,10 +119,6 @@ input[type="submit"].search_button:active{
 .floating_left {
     margin-right: 15px;
     float: left;
-}
-
-.form_section{
-    align-items: center;
 }
 
 .button_section{
@@ -219,4 +214,143 @@ section.two_columns{
 
 a:link{
     text-decoration: none;
+}
+
+.responsive_person_icon{
+    display: none;
+}
+
+@media(min-width : 700px){
+    .two_columns_form{
+        display: grid;
+        grid-template-columns: 75% 25%;
+        margin:0;
+        padding: 0px 20px;
+    }
+
+    .search_button{
+        width: 100%;
+        height: 80px;
+        display: block;
+        margin: auto;
+    }
+
+    .email_form{
+        width: 90%;
+        padding: 0px 10px;
+        margin:0px 0px 0px 10px;
+    }
+
+    .email_form_error{
+        width: 90%;
+        padding: 0px 10px;
+        margin:0px 0px 0px 10px;
+    }
+
+    .two_columns_list{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .two_columns_conditions{
+        display: grid;
+        grid-template-columns: 80% 20%;
+        margin: 20px;
+    }
+
+    .terms_text{
+        display: block;
+        margin: 0px 10% 0px 0px;
+    }
+
+    .terms_links{
+        display: block;
+        margin:auto;
+    }
+
+    .circle_border_icon{
+        background-color: #004A80;
+        border: 5px solid #004A80;
+        border-radius: 50%;
+    }
+
+    img.circle_border_icon{
+        height: 30px;
+        width: 30px;
+    }
+    
+    .responsive_person_icon{
+        display: initial;
+        margin: 20px 5% 5% 65%;
+    }
+
+    .two_columns_border{
+        display: grid;
+        grid-template-columns: 15% 80%;
+    }
+
+    .two_columns_results{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "first second";
+    }
+    
+    .column_address{
+        grid-area: first;
+        grid-row: 1;
+    }
+
+    .column_email{
+        grid-area: first;
+        grid-row: 2;
+    }
+
+    .column_phone{
+        grid-area: second;
+        grid-row: 1;
+    }
+
+    .column_relatives{
+        grid-area: second;
+        grid-row: 2;
+    }
+
+    .gray_description{
+        margin: 2% 0px;
+    }
+
+    .white_gradient{
+        padding: 2% 5%;
+    }
+    
+    .responsive_blue_bg{
+        padding: 10% 0px;
+    }
+
+    .bottom_text{
+        margin-left: 20px;
+    }
+}
+
+@media(min-width:960px){
+
+    .blue_bg {
+        padding: 0 10% 10px 10%;
+    }   
+
+    .blue_header{
+        margin:0px;
+    }
+
+    .white_header_text{
+        margin: initial;
+    }
+
+    .white_gradient{
+        padding: 2% 10%;
+    }
+
+    .terms_conditions{
+        padding: 0 10%;
+    }
 }

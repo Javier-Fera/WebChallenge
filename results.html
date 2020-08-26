@@ -10,7 +10,7 @@
 </head>
 
 <body onload="writedata(getEmail())">
-
+    
     <div class="blue_bg">
         <section class="company_logo">
             <img class="logo_image" src="assets/logo.png" alt="logo_icon">
@@ -29,44 +29,58 @@
         </section>
 
         <section id="results_view" class="bordered_results">
-            <div>
-                <section>
-                    <p id="result_name" class="blue_header_left"></p>
-                    <p id="result_description" class='r_description'></p>
+            <div class="two_columns_border">
+                <section class="responsive_person_icon">
+                        <img class="circle_border_icon" src="assets/person.png" alt="person_icon">
                 </section>
 
                 <section>
-                    <p class='r_header'>Address</p>
-                    <p id="result_address" class='r_description'></p>
-                    <p class='r_header'>Email</p>
-                    <p id="result_email" class='r_description'></p>
-                </section>
+                    <section>
+                        <p id="result_name" class="blue_header_left"></p>
+                        <p id="result_description" class='r_description'></p>
+                    </section>
 
-                <section>
-                    <p class='r_header'>Phone Numbers</p>
-                    <div id="result_phone"></div>
-                    <p class='r_header'>Relatives</p>
-                    <div id='result_relatives'></div>
+                    <section class="two_columns_results">
+                        <section class="column_address">
+                            <p class='r_header'>Address</p>
+                            <p id="result_address" class='r_description'></p>
+                        </section>
+                        <section class="column_email">
+                            <p class='r_header'>Email</p>
+                            <p id="result_email" class='r_description'></p>
+                        </section>
+
+                        <section class="column_phone">
+                            <p class='r_header'>Phone Numbers</p>
+                            <div id="result_phone"></div>
+                        </section>
+                        <section class="column_relatives">
+                            <p class='r_header'>Relatives</p>
+                            <div id='result_relatives'></div>
+                        </section>
+                    </section>
                 </section>
             </div>
         </section>
     </div>
 
-    <div class="blue_bg">
+    <div class="blue_bg responsive_blue_bg">
         <section>
             <p class="white_header_text"> Can't Find The Right Person?</p>
             <p class="white_description_text">
                 <span class="bold_yellow">Try Again</span>
                 <span> - Make a new search</span></p>
         </section>
-        <section id="class_form" class="form_section">
-            <div class="email_form">
-                <label id="email_label" class="email_label" for="email_input">Email</label>
-                <input id="email_input" type="text">
-            </div>
-        </section>
-        <input class="search_button" onclick="storeEmail()" value="GO!" type="submit" />
 
+        <section class="two_columns_form">
+            <section id="class_form" class="form_section">
+                <div class="email_form">
+                    <label id="email_label" class="email_label" for="email_input">Email</label>
+                    <input id="email_input" type="text">
+                </div>
+            </section>
+            <input class="search_button" onclick="storeEmail()" value="GO!" type="submit" />
+        </section>
 
         <section class="bottom_text">
             <img class="icon_image floating_left" src="assets/lock.png" alt="lock_icon">
@@ -74,7 +88,7 @@
         </section>
     </div>
 
-    <div class="terms_conditions">
+    <div class="terms_conditions two_columns_conditions">
         <section class="terms_text">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum odio nibh,
                 vel viverra ex tempus id. Praesent id purus feugiat, ornare justo sit amet,
@@ -89,7 +103,7 @@
                 <a href="#">Terms</a>
                 <span> | </span>
                 <a href="#">Conditions</a>
-        </span>
+            </span>
         </section>
     </div>
 </body>

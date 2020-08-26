@@ -48,3 +48,10 @@ Finally:
 
 Heroku investigation and deployment.
 
+### 26/8/20
+
+Finished with the Responsiveness for both tablet and desktop
+
+Next up: 
+
+Heroku deployment
