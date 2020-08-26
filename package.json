@@ -1,0 +1,23 @@
+{
+  "name": "webchallenge",
+  "version": "1.0.0",
+  "description": "challenge?site\u001b[D\u001b[D\u001b[D\u001b[_",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+	"start" : "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Javier-Fera/WebChallenge.git"
+  },
+  "author": "Javier-Fer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Javier-Fera/WebChallenge/issues"
+  },
+  "homepage": "https://github.com/Javier-Fera/WebChallenge#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
