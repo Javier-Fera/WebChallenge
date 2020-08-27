@@ -1,12 +1,7 @@
 function writedata(email) {
     
     var results;
-    fetch("https://ltv-data-api.herokuapp.com/api/v1/records.json?email="+email, {
-        mode: 'cors',
-        headers: {        
-        'Access-Control-Allow-Origin':'*'
-        }
-    })
+    fetch("https://ltv-data-api.herokuapp.com/api/v1/records.json?email="+email)
         .then(res => res.json())
         .then(data => results = data)
         .then(() => {
