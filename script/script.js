@@ -1,7 +1,16 @@
 function writedata(email) {
     
     var results;
-    fetch("https://ltv-data-api.herokuapp.com/api/v1/records.json?email="+email)
+    fetch("https://challenge-cors-bp.herokuapp.com/https://ltv-data-api.herokuapp.com/api/v1/records.json?email="+email, {
+        method: "GET",
+        mode: "cors",
+        headers: {        
+        "Access-Control-Allow-Origin":"*",
+        "Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
+        "Access-Control-Allow-Methods" : "GET, POST, PUT, DELETE, OPTIONS",
+        "Content-Type" : "application/json"
+    }
+    })
         .then(res => res.json())
         .then(data => results = data)
         .then(() => {
